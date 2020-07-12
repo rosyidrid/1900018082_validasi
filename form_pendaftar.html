@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pendaftaran Kompetisi</title>
+	<style type="text/css">
+	body{
+		background-image: url(dota2.jpg);
+	}
+	.badan{
+		color: white;
+		text-align: center;
+		margin-top: 100px;
+	}
+	</style>
+</head>
+<body>
+	<div class="badan" align="center">
+		<h1>Form Pendaftaran Kompetisi eSport DOTA 2</h1>
+		<form name="form" method="POST" action="proses.php">
+			<table width="25%" border="0" align="center">
+				<tr>
+					<td>Nama Lengkap</td>	
+					<td><input type="text" name="nama" id="nama"></td>
+				</tr>
+				<tr>
+					<td>Alamat</td>	
+					<td><input type="text" name="alamat" id="alamat"></td>
+				</tr>
+				<tr>
+					<td>No. Hp</td>	
+					<td><input type="text" name="nohp" id="nohp"></td>
+				</tr>
+				<tr>
+					<td>E-Mail</td>	
+					<td><input type="text" name="email" id="email"></td>
+				</tr>
+				<tr>
+					<td>Status</td>
+					<td><select name="status" id="status">
+						<option>Pilih</option>
+						<option>Belum Menikah</option>
+						<option>Menikah</option>
+					</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Pendidikan</td>
+					<td><select name="pendidikan" id="pendidikan">
+						<option>Pilih</option>
+						<option>Tamat SD</option>
+						<option>Tamat SMP</option>
+						<option>Tamat SMA</option>
+						<option>Lulus S1/D3</option>
+						<option>Lulus S2</option>
+						<option>Lulus S3</option>
+						</select>
+					</td>
+				</tr>
+				<tr>
+					<td>Motivasi Mengikuti Kompetisi</td>
+					<td> <textarea name="motivasi" id="motivasi"></textarea></td>	
+				</tr>
+				<tr></tr>
+					<br>
+					<td></td>
+					<td></td>
+				</tr>	
+			</table>
+			<input type="submit" name="submit" value="Kirim"><input type="reset" name="submit_2" value="Batal">
+		</form>
+	</div>
+</body>
+</html>
